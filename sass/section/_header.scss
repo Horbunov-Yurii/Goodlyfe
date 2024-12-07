@@ -1,7 +1,7 @@
 .header {
     padding-top: 20px;
     padding-bottom: 16px;
-    background-color: #E43071;
+    background-color: $main-color;
 
     @media screen and (min-width: 1174px) {
         padding-top: 25px;
@@ -16,7 +16,7 @@
     }
 
     &__logo {
-        color: #FFF;
+        color: $default-color;
 text-align: center;
 font-size: 21.818px;
 font-weight: 800;
@@ -29,7 +29,7 @@ transform: translateX(-100px);
     }
 
     &__span {
-        color: #FFC1D8;
+        color: $logo-color;
     }
 
     &__btn {
@@ -46,7 +46,7 @@ transform: translateX(-100px);
         width: 40px;
         height: 40px;
         // border-radius: 38.5px;
-        fill: #FFF;
+        fill: $default-color;
     }
 
     &__nav {
@@ -67,7 +67,7 @@ transform: translateX(-100px);
     }
 
     &__link {
-        color: #FFF;
+        color: $default-color;
 text-align: center;
 font-size: 16px;
 font-weight: 400;
@@ -76,8 +76,8 @@ line-height: 1.12;
     
     &__item:last-child{
         .header__link {
-            background-color: #FFF;
-            color: #E43071;
+            background-color: $default-color;
+            color: $main-color;
             border-radius: 200px;
             border: none;
             padding: 16px 62px;

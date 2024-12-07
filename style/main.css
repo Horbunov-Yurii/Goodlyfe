@@ -55,7 +55,7 @@ body {
   position: relative;
 }
 .header__logo {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 21.818px;
   font-weight: 800;
@@ -82,7 +82,7 @@ body {
 .header__burger {
   width: 40px;
   height: 40px;
-  fill: #FFF;
+  fill: #fff;
 }
 .header__nav {
   display: none;
@@ -102,14 +102,14 @@ body {
   }
 }
 .header__link {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.12;
 }
 .header__item:last-child .header__link {
-  background-color: #FFF;
+  background-color: #fff;
   color: #E43071;
   border-radius: 200px;
   border: none;
