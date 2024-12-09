@@ -1,0 +1,90 @@
+.hero {
+  padding-top: 103px;
+  padding-bottom: 166px;
+  text-align: center;
+  position: relative;
+  background-position: bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 50px cover, cover;
+  background-image: url(../img/line-mobile.png), url(../img/mobile/heromobail@1x.webp);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../img/mobile/heromobail@2x.webp);
+  }
+
+  @media screen and (min-width: 1174px) {
+    padding-top: 241px;
+    padding-bottom: 202px;
+    background-image: url(../img/line.png), url(../img/desktop/herodesktop@1x.webp);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/desktop/herodesktop@2x.webp);
+    }
+  }
+
+  &__title {
+    color: $default-color;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 auto;
+    margin-bottom: 23px;
+
+    @media screen and (min-width: 1174px) {
+      width: 778px;
+      font-size: 70px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__span {
+    color: $default-color;
+    font-family: "Poppins";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.1;
+
+    @media screen and (min-width: 1174px) {
+      color: $logo-color;
+      font-size: 70px;
+    }
+  }
+
+  &__btn {
+    color: $default-color;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 2.31;
+    background: $main-color;
+    border-radius: 38.5px;
+    padding: 10px 41px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+
+    @media screen and (min-width: 1174px) {
+      padding: 15px 56px;
+    }
+  }
+
+  &__dots {
+   position: absolute;
+  bottom: -40px;
+  transform: translateX(-50%);
+  left: center;
+    width: 97px;
+    // height: 50px;
+    
+    @media screen and (min-width: 1174px) {
+      
+      }
+  }
+}
