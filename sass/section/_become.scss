@@ -1,0 +1,85 @@
+.become {
+    padding-top: 75px;
+    padding-bottom: 25px;
+    background-image: url(../img/mobile/become-mobile@1x.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+     @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../img/mobile/become-mobile@2x.webp);
+  }
+   @media screen and (min-width: 1174px) {
+    background-image: url(../img/desktop/become-dekstop@1x.webp);
+        padding-top: 231px;
+        padding-bottom: 26px;
+         @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../img/desktop/become-dekstop@2x.webp);
+  }
+    }
+
+    &__title {
+        color: $default-color;
+text-shadow: 0px 0px 53.077px rgba(0, 0, 0, 0.46);
+font-size: 42.462px;
+font-weight: 700;
+line-height: 1.09;
+margin-bottom: 20px;
+width: 252.115px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+@media screen and (min-width: 1174px) {
+    width: 850px;
+text-shadow: 0px 0px 60px rgba(0, 0, 0, 0.46);
+font-size: 60px;
+line-height: 1.5;
+    }
+    }
+
+    &__text {
+        color: $default-color;
+text-align: center;
+text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.50);
+font-family: "Open Sans";
+font-size: 16px;
+font-weight: 600;
+line-height: normal;
+margin-left: auto;
+margin-right: auto;
+width: 357px;
+@media screen and (min-width: 1174px) {
+    width: 533px;
+font-size: 17px;
+    }
+    }
+
+    &__btn {
+        color: $default-color;
+text-align: center;
+font-family: "Open Sans";
+font-size: 16px;
+font-weight: 600;
+line-height: 2.31;
+padding: 9px 105px;
+border-radius: 38.5px;
+background: $main-color;
+display: block;
+margin: 0 auto;
+margin-top: 10px;
+margin-bottom: 50px;
+@media screen and (min-width: 1174px) {
+padding: 15px 77px;
+margin-bottom: 204px;
+    }
+    }
+
+      &__dots {
+   width: 97px;
+height: 50px;
+  }
+}

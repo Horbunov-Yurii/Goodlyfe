@@ -22,6 +22,7 @@ img {
 button {
   cursor: pointer;
   border: none;
+  background-color: transparent;
 }
 
 .container {
@@ -300,4 +301,94 @@ body {
 .meetbody__wrap {
   margin-left: auto;
   margin-right: auto;
+}
+
+.become {
+  padding-top: 75px;
+  padding-bottom: 25px;
+  background-image: url(../img/mobile/become-mobile@1x.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .become {
+    background-image: url(../img/mobile/become-mobile@2x.webp);
+  }
+}
+@media screen and (min-width: 1174px) {
+  .become {
+    background-image: url(../img/desktop/become-dekstop@1x.webp);
+    padding-top: 231px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1174px) and (min-device-pixel-ratio: 2), screen and (min-width: 1174px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1174px) and (min-resolution: 192dpi), screen and (min-width: 1174px) and (min-resolution: 2dppx) {
+  .become {
+    background-image: url(../img/desktop/become-dekstop@2x.webp);
+  }
+}
+.become__title {
+  color: #fff;
+  text-shadow: 0px 0px 53.077px rgba(0, 0, 0, 0.46);
+  font-size: 42.462px;
+  font-weight: 700;
+  line-height: 1.09;
+  margin-bottom: 20px;
+  width: 252.115px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+@media screen and (min-width: 1174px) {
+  .become__title {
+    width: 850px;
+    text-shadow: 0px 0px 60px rgba(0, 0, 0, 0.46);
+    font-size: 60px;
+    line-height: 1.5;
+  }
+}
+.become__text {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  width: 357px;
+}
+@media screen and (min-width: 1174px) {
+  .become__text {
+    width: 533px;
+    font-size: 17px;
+  }
+}
+.become__btn {
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 2.31;
+  padding: 9px 105px;
+  border-radius: 38.5px;
+  background: #E43071;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 1174px) {
+  .become__btn {
+    padding: 15px 77px;
+    margin-bottom: 204px;
+  }
+}
+.become__dots {
+  width: 97px;
+  height: 50px;
 }/*# sourceMappingURL=main.css.map */
