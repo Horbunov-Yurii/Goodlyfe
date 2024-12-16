@@ -391,4 +391,29 @@ body {
 .become__dots {
   width: 97px;
   height: 50px;
+}
+
+.premium {
+  padding-top: 74px;
+  padding-bottom: 39px;
+}
+@media screen and (min-width: 1174px) {
+  .premium {
+    padding-top: 224px;
+    padding-bottom: 129px;
+  }
+}
+.premium__img {
+  width: 200px;
+  height: 135px;
+}
+.premium__list {
+  display: flex;
+  margin-bottom: 79px;
+}
+.premium__item:last-child {
+  z-index: -1;
+}
+.premium__item:last-child .premium__img {
+  transform: translate(-70px, 50px);
 }/*# sourceMappingURL=main.css.map */

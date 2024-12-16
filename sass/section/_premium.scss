@@ -1,0 +1,31 @@
+.premium {
+padding-top: 74px;
+padding-bottom: 39px;
+
+@media screen and (min-width: 1174px) {
+    padding-top: 224px;
+    padding-bottom: 129px;
+}
+&__img {
+width: 200px;
+height: 135px;
+}
+
+&__list {
+    display: flex;
+    margin-bottom: 79px;
+
+}
+
+&__item:last-child {
+ .premium__img {
+    transform: translate(-70px,50px);
+ }
+ z-index: -1;
+}
+
+&__tittle {
+
+}
+}
+
