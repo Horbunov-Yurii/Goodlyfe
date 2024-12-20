@@ -26,17 +26,12 @@ button {
 }
 
 .container {
-  width: 320px;
+  max-width: 1174px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 22px;
   padding-right: 22px;
   outline: 1px solid red;
-}
-@media screen and (min-width: 1174px) {
-  .container {
-    width: 1174px;
-  }
 }
 
 body {
@@ -58,7 +53,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
 }
 .header__logo {
   color: #fff;
@@ -66,11 +60,11 @@ body {
   font-size: 21.818px;
   font-weight: 800;
   line-height: 1.07;
+  margin-right: auto;
 }
 @media screen and (min-width: 1174px) {
   .header__logo {
     font-size: 40px;
-    transform: translateX(-100px);
   }
 }
 .header__span {
@@ -104,7 +98,8 @@ body {
 @media screen and (min-width: 1174px) {
   .header__list {
     display: flex;
-    gap: 76px;
+    align-items: center;
+    gap: 50px;
   }
 }
 .header__link {
@@ -120,37 +115,33 @@ body {
   border-radius: 200px;
   border: none;
   padding: 16px 62px;
-  position: absolute;
-  right: -100px;
-  top: 50%;
-  transform: translate(0%, -50%);
 }
 
 .hero {
+  background-color: red;
   padding-top: 103px;
-  padding-bottom: 166px;
+  padding-bottom: 10px;
   text-align: center;
   position: relative;
-  background-position: bottom, center;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 50px cover, cover;
-  background-image: url(../img/linemobail@1x.webp), url(../img/mobile/heromobail@1x.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/mobile/heromobail@1x.webp);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../img/linemobile@2x.webp), url(../img/mobile/heromobail@2x.webp);
+    background-image: url(../img/mobile/heromobail@2x.webp);
   }
 }
 @media screen and (min-width: 1174px) {
   .hero {
     padding-top: 241px;
-    padding-bottom: 202px;
-    background-image: url(../img/desktop/linedesktop@1x.webp), url(../img/desktop/herodesktop@1x.webp);
+    background-image: url(../img/desktop/herodesktop@1x.webp);
   }
 }
 @media screen and (min-width: 1174px) and (min-device-pixel-ratio: 2), screen and (min-width: 1174px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1174px) and (min-resolution: 192dpi), screen and (min-width: 1174px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../img/desktop/linedesktop@2x.webp), url(../img/desktop/herodesktop@2x.webp);
+    background-image: url(../img/desktop/herodesktop@2x.webp);
   }
 }
 .hero__title {
@@ -196,10 +187,12 @@ body {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 166px;
 }
 @media screen and (min-width: 1174px) {
   .hero__btn {
     padding: 15px 56px;
+    margin-bottom: 156px;
   }
 }
 .hero__dots {
@@ -209,6 +202,7 @@ body {
   left: center;
   width: 97px;
 }
+
 .meetbody {
   padding-top: 35px;
   padding-bottom: 23px;
@@ -219,8 +213,9 @@ body {
     padding-bottom: 226px;
   }
 }
-.meetbody__wrap {
-  position: relative;
+.meetbody__list {
+  display: flex;
+  justify-content: center;
 }
 @media screen and (min-width: 1174px) {
   .meetbody__wrap {
@@ -236,18 +231,22 @@ body {
     width: 347px;
   }
 }
+.meetbody__item:last-child {
+  transform: translate(-60px, 100px);
+}
 .meetbody__item:last-child .meetbody__img {
   width: 146px;
-  position: absolute;
-  top: 95px;
-  right: 80px;
 }
 @media screen and (min-width: 1174px) {
   .meetbody__item:last-child .meetbody__img {
     width: 241px;
-    top: 38%;
-    left: 220px;
+    transform: translate(-80px, 50px);
   }
+}
+.meetbody__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .meetbody__title {
   color: #e43071;
@@ -359,7 +358,12 @@ body {
   line-height: normal;
   margin-left: auto;
   margin-right: auto;
-  width: 357px;
+  width: 100%;
+}
+@media screen and (min-width: 357px) {
+  .become__text {
+    width: 357px;
+  }
 }
 @media screen and (min-width: 1174px) {
   .become__text {

@@ -1,90 +1,84 @@
 .header {
-    padding-top: 20px;
-    padding-bottom: 16px;
-    background-color: $main-color;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  background-color: $main-color;
+
+  @media screen and (min-width: 1174px) {
+    padding-top: 25px;
+    padding-bottom: 26px;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    color: $default-color;
+    text-align: center;
+    font-size: 21.818px;
+    font-weight: 800;
+    line-height: 1.07;
+    margin-right: auto;
 
     @media screen and (min-width: 1174px) {
-        padding-top: 25px;
-        padding-bottom: 26px;
+      font-size: 40px;
     }
+  }
 
-    &__box {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
+  &__span {
+    color: $logo-color;
+  }
+
+  &__btn {
+    background-color: transparent;
+    border: none;
+
+    @media screen and (min-width: 1174px) {
+      display: none;
     }
+  }
 
-    &__logo {
-        color: $default-color;
-text-align: center;
-font-size: 21.818px;
-font-weight: 800;
-line-height: 1.07;
+  &__burger {
+    width: 40px;
+    height: 40px;
+    fill: $default-color;
+  }
 
-@media screen and (min-width: 1174px) {
-font-size: 40px;
-transform: translateX(-100px);
-}
+  &__nav {
+    display: none;
+
+    @media screen and (min-width: 1174px) {
+      display: block;
     }
+  }
 
-    &__span {
-        color: $logo-color;
+  &__list {
+    display: none;
+
+    @media screen and (min-width: 1174px) {
+      display: flex;
+      align-items: center;
+      gap: 50px;
     }
+  }
 
-    &__btn {
-        background-color: transparent;
-        border: none;
-        
+  &__link {
+    color: $default-color;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.12;
+  }
 
-        @media screen and (min-width: 1174px) {
-            display: none;
-            }
+  &__item:last-child {
+    .header__link {
+      background-color: $default-color;
+      color: $main-color;
+      border-radius: 200px;
+      border: none;
+      padding: 16px 62px;
     }
-
-    &__burger {
-        width: 40px;
-        height: 40px;
-        // border-radius: 38.5px;
-        fill: $default-color;
-    }
-
-    &__nav {
-        display: none;
-
-        @media screen and (min-width: 1174px) {
-            display: block;
-            }
-    }
-
-    &__list {
-        display: none;
-
-        @media screen and (min-width: 1174px) {
-            display: flex;
-            gap: 76px;
-            }
-    }
-
-    &__link {
-        color: $default-color;
-text-align: center;
-font-size: 16px;
-font-weight: 400;
-line-height: 1.12;
-    }
-    
-    &__item:last-child{
-        .header__link {
-            background-color: $default-color;
-            color: $main-color;
-            border-radius: 200px;
-            border: none;
-            padding: 16px 62px;
-            position: absolute;
-            right: -100px;
-            top: 50%;
-            transform: translate(0%, -50%);
-        }
-    }
+  }
 }

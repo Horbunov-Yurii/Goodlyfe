@@ -51,7 +51,12 @@ font-weight: 600;
 line-height: normal;
 margin-left: auto;
 margin-right: auto;
-width: 357px;
+width: 100%;
+@media screen and (min-width: 357px) {
+    width: 357px;
+
+    }
+
 @media screen and (min-width: 1174px) {
     width: 533px;
 font-size: 17px;
